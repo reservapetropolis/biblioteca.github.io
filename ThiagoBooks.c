@@ -82,7 +82,7 @@ int main()
                 fprintf(fo, "<p>%s</p>\n", Description);
             
             
-            fprintf(fo, "<p><b>ISBN</b>=%s</p>\n", ISBN);
+            fprintf(fo, "<p><b>ISBN</b>:%s</p>\n", ISBN);
             if (author[0] != '\0')
               fprintf(fo, "<p><b>Autor</b>:%s</p>\n", author);
 
