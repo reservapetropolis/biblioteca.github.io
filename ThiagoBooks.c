@@ -1,4 +1,4 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 
 void get_text(FILE* f, char out[])
 {
@@ -82,7 +82,8 @@ int main()
                 fprintf(fo, "<p>%s</p>\n", Description);
             
             
-            fprintf(fo, "<p><b>ISBN</b>:%s</p>\n", ISBN);
+            fprintf(fo, u8"<p><b>ISBN</b>:<a href=\"https://www.google.com.br/search?q=ISBN:%s\" target=\"_blank\">%s</a></p>\n", ISBN, ISBN);
+
             if (author[0] != '\0')
               fprintf(fo, "<p><b>Autor</b>:%s</p>\n", author);
 
